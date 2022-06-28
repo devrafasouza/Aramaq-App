@@ -1,0 +1,1 @@
+emulator -avd ecommerce -no-snapshot
