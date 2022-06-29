@@ -26,3 +26,29 @@ export default function App() {
   );
 }
 */
+
+import React from 'react';
+import { 
+  SafeAreaView,
+  StyleSheet,
+} from 'react-native';
+
+import Parceiros from './src/screens/Parceiros';
+
+
+function App() {
+  return (
+    <SafeAreaView style={styles.container}>
+      <Parceiros />
+    </SafeAreaView>
+    
+  )
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  }
+})
+
+export default App;
