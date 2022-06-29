@@ -1,23 +1,14 @@
-/* import React from 'react';
-import {StatusBar, SafeAreaView, View} from 'react-native';
-import {
-  useFonts,
-  Montserrat_400Regular,
-  Montserrat_700Bold,
-} from '@expo-google-fonts/montserrat';
+import React from 'react';
+import { 
+  StatusBar, 
+  SafeAreaView 
+} from 'react-native';
 
 import Servicos from './src/screens/Servicos/';
 import mock from './src/mocks/servicos.js';
 
 export default function App() {
-  const [fontCarregada] = useFonts({
-    MontserratRegular: Montserrat_400Regular,
-    MontserratBold: Montserrat_700Bold,
-  });
 
-  if (!fontCarregada) {
-    return <View />;
-  }
   return (
     <SafeAreaView style={{flex: 1}}>
       <StatusBar barStyle="dark-content" />
@@ -25,9 +16,9 @@ export default function App() {
     </SafeAreaView>
   );
 }
-*/
 
-import React from 'react';
+
+/* import React from 'react';
 import { 
   SafeAreaView,
   StyleSheet,
@@ -51,4 +42,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default App;
+export default App; */

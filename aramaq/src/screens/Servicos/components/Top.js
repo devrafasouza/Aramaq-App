@@ -3,11 +3,10 @@ import {
   Image,
   Dimensions,
   StyleSheet,
-  View
 } from 'react-native'
 
 import Texto from '../../../components/Texto.js';
-import topo from '../../../../assets/topo.jpg';
+import topo from '../../../assets/topo.jpg';
 
 const width = Dimensions.get('screen').width;
 

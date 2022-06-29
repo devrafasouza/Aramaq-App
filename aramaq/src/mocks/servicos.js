@@ -1,9 +1,11 @@
+import React from 'react';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import pneumatica from '../../assets/pneumatica.jpg';
-import eletrica from '../../assets/eletrica.jpg';
-import mecanica from '../../assets/mecanica.jpg';
-import tornearia from '../../assets/tornearia.jpg';
+import pneumatica from '../assets/pneumatica.jpg';
+import eletrica from '../assets/eletrica.jpg';
+import mecanica from '../assets/mecanica.jpg';
+import tornearia from '../assets/tornearia.jpg';
+import logo from '../assets/logo.png';
 
 const servico = {
   top: {
@@ -11,7 +13,7 @@ const servico = {
   },
   details: {
     tituloConheca: 'Conheça nossas especialidades',
-    icone: <MaterialCommunityIcons name="tools" size="20" />,
+    icone: logo,
     nomeEmpresa: 'Aramaq Serviços Industriais',
     descricao: 'A melhor solução com os melhores especialistas',
     titulo: 'Serviços',

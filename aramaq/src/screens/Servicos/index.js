@@ -5,7 +5,7 @@ import {
   FlatList
 } from 'react-native';
 
-import Top from '../../screens/Servicos/components/Top.js';
+import Top from '../../screens/Servicos/components/Top.js'
 import Details from '../../screens/Servicos/components/Details.js';
 import Item from './components/Item.js';
 import Bottom from './components/Bottom.js';
