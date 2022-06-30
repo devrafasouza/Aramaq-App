@@ -1,36 +1,16 @@
 import React from 'react';
 import { 
-  StatusBar, 
-  SafeAreaView 
-} from 'react-native';
-
-import Servicos from './src/screens/Servicos/';
-import mock from './src/mocks/servicos.js';
-
-export default function App() {
-
-  return (
-    <SafeAreaView style={{flex: 1}}>
-      <StatusBar barStyle="dark-content" />
-      <Servicos {...mock} />
-    </SafeAreaView>
-  );
-}
-
-
-/* import React from 'react';
-import { 
   SafeAreaView,
   StyleSheet,
+  StatusBar,
 } from 'react-native';
+import AppRoutes from './src/routes/AppRoutes.js';
 
-import Parceiros from './src/screens/Parceiros';
-
-
-function App() {
+export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Parceiros />
+      <StatusBar barStyle="dark-content" />
+      <AppRoutes />
     </SafeAreaView>
     
   )
@@ -40,6 +20,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   }
-})
+});
 
-export default App; */

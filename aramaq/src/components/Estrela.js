@@ -5,8 +5,8 @@ import {
   StyleSheet,
 } from 'react-native';
 
-import estrela from '../../assets/estrela.png';
-import estrelaCinza from '../../assets/estrelaCinza.png';
+import estrela from '../assets/estrela.png';
+import estrelaCinza from '../assets/estrelaCinza.png';
 
 
 export default function Estrela({ 

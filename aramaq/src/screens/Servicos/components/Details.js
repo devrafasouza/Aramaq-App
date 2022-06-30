@@ -2,7 +2,8 @@ import React from 'react';
 import { 
   StyleSheet,
   View,
-  Image
+  Image,
+  Text,
 } from 'react-native';
 
 import Texto from '../../../components/Texto.js';
@@ -12,7 +13,7 @@ export default function Details({ tituloConheca, icone, nomeEmpresa, descricao, 
       <Texto style={styles.tituloConheca}>{ tituloConheca }</Texto>
       <View style={styles.containerEmpresaIcone}>
         <Image style={styles.icone} source={icone} />
-        <Texto style={styles.nomeEmpresa}>{ nomeEmpresa }</Texto>
+        <Text style={styles.nomeEmpresa}>{ nomeEmpresa }</Text>
       </View>
       {/* <Texto style={styles.descricao}>Todos os nossos serviços são flexiveis para a sua necessidade!</Texto> */}
       <Texto style={styles.descricao}>{ descricao }</Texto>
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     lineHeight: 42,
     marginBottom: 20,
-    fontFamily: 'Montserrat-Bold'
+    fontWeight: 'bold'
   },
   containerEmpresaIcone: {
     flexDirection: 'row',
@@ -37,6 +38,8 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     fontSize: 16,
     lineHeight: 26,
+    fontFamily: 'FiraSans-Bold',
+    color: '#464646'
   },
   descricao: {
     color: '#a3a3a3',
@@ -45,11 +48,11 @@ const styles = StyleSheet.create({
   },
   titulo: {
     color: '#464646',
-    fontFamily: 'Montserrat-Bold',
     marginTop: 32,
     marginBottom: 8,
     fontSize: 20,
     lineHeight: 32,
+    fontWeight: 'bold'
   },
   icone: {
     width: 50,

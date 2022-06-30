@@ -12,18 +12,17 @@ export default function Texto({ children, style }) {
   }
 
   return (
-    <Text style={[style, estilo]}>{ children }</Text>
+    <Text style={[estilo, style]}>{ children }</Text>
   )
 
 }
 
 const styles = StyleSheet.create({
   texto: {
-    fontFamily: 'MontserratRegular',
-    fontWeight: 'normal'
+    fontFamily: 'Montserrat-Regular',
+
   },
   textoNegrito: {
-    fontFamily: 'MontserratBold',
-    fontWeight: 'normal'
+    fontFamily: 'Montserrat-Bold',
   }
 });

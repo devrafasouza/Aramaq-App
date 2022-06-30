@@ -1,8 +1,8 @@
-import tectorno from '../../../assets/produtores/tectorno.jpg';
-import colobri from '../../../assets/produtores/colibri.png';
-import aratorno from '../../../assets/produtores/aratorno.jpg';
-import hidraulicMaster from '../../../assets/produtores/hidraulicmaster.jpg';
-import pneumaticondor from '../../../assets/produtores/pneumaticondor.jpg';
+import tectorno from '../../assets/parceiros/tectorno.jpg'
+import colobri from '../../assets/parceiros/colibri.png';
+import aratorno from '../../assets/parceiros/aratorno.jpg';
+import hidraulicMaster from '../../assets/parceiros/hidraulicmaster.jpg';
+import pneumaticondor from '../../assets/parceiros/pneumaticondor.jpg';
 
 const gerarNumeroAleatorio = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);

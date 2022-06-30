@@ -10,7 +10,8 @@ import topo from '../../../assets/topo.jpg';
 
 const width = Dimensions.get('screen').width;
 
-export default function Topo({titulo}) {
+export default function Topo({ titulo }) {
+
   return (
     <>
       <Image style={styles.container} source={topo}  />
@@ -22,7 +23,7 @@ export default function Topo({titulo}) {
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    height: 720 / 640 * width
+    height: 300
   },
   titulo: {
     width: '100%',

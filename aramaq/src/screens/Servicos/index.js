@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { 
   StyleSheet,
   View,
@@ -9,26 +9,44 @@ import Top from '../../screens/Servicos/components/Top.js'
 import Details from '../../screens/Servicos/components/Details.js';
 import Item from './components/Item.js';
 import Bottom from './components/Bottom.js';
+import { 
+  loadServicos, 
+  loadTopServicos, 
+  loadDetailsServicos, 
+  loadBottomServicos 
+} from '../../Services/loadingData.js';
 
-export default function Servicos({top, details, itens, bottom}) {
+export default function Servicos() {
+  const [topInfo, setTopInfo] = useState({});
+  const [servicosInfo, setServicosInfo] = useState([]);
+  const [detailsInfo, setDetailsInfo] = useState({});
+  const [bottomInfo, setBottomInfo] = useState({});
+
+  useEffect(() => {
+    setServicosInfo(loadServicos());
+    setTopInfo(loadTopServicos());
+    setDetailsInfo(loadDetailsServicos());
+    setBottomInfo(loadBottomServicos());
+
+  })
   return (
     <>
       <FlatList
-        data={ itens.lista }
+        data={ servicosInfo.lista }
         renderItem={Item}
         keyExtractor={({ nome }) => nome}
         ListHeaderComponent={() => {
           return(
             <>
-              <Top {...top}/>
+              <Top {...topInfo}/>
               <View style={styles.servicos}>
-                <Details {...details}/>
+                <Details {...detailsInfo}/>
               </View>
             </>
           )
         }}
         ListFooterComponent={() => {
-          return  <Bottom {...bottom}/>
+          return  <Bottom {...bottomInfo}/>
         }}
       />
     </>

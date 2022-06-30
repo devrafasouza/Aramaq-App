@@ -7,8 +7,8 @@ import {
 } from 'react-native';
 
 
-import { loadTop } from '../../../Services/loadingData.js';
-import logo from '../../../../assets/logo.png';
+import { loadTop } from '../../../Services/loadingData';
+import logo from '../../../assets/logo.png';
 
 export default function Top() {
   const [topInfo, setTopInfo] = useState({});
@@ -49,21 +49,22 @@ const styles = StyleSheet.create({
     marginRight: 6
   },
   textLogo: {
-    color: 'black',
+    color: '#464646',
     fontSize: 14,
-    fontWeight: 'bold'
+    fontFamily: 'FiraSans-Bold'
   },
   textBoasVindas: {
     marginTop: 24,
     fontSize: 26,
     lineHeight: 42,
-    fontWeight: 'bold',
+    fontFamily: 'Montserrat-Bold',
     color: '#464646'
   },
   textLegenda: {
     fontSize: 16,
     lineHeight: 26,
-    color: '#a3a3a3'
+    color: '#a3a3a3',
+    fontFamily: 'Montserrat-Regular'
 
   }
 })

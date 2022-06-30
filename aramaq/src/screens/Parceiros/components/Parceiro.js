@@ -78,15 +78,16 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginLeft: 8,
     marginVertical: 16,
-    marginRight: 16
+    marginRight: 16,
   },
   name: {
     fontSize: 14,
     lineHeight: 22,
-    fontWeight: 'bold'
+    fontFamily: 'Montserrat-Bold'
   },
   distance: {
     fontSize: 12,
-    lineHeight: 19
+    lineHeight: 19,
+    fontFamily: 'Montserrat-Bold'
   }
 });

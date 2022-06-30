@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     lineHeight: 32,
     marginHorizontal: 16,
     marginTop: 16,
-    fontWeight: 'bold',
+    fontFamily: 'Montserrat-Bold',
     color: '#464646'
   }
 
